@@ -1,5 +1,5 @@
 ```
- _                     _ 
+ _                     _
 | |__  _ __ _ __   __| |
 | '_ \| '__| '_ \ / _` |
 | |_) | |  | | | | (_| |
@@ -87,7 +87,7 @@ Creates `brands/sitename.tld.md` with the full branding profile including:
 
 ## CLI Created By
 
-This CLI was created by [CommandCode.ai](https://commandcode.ai) using [ahmadawais/cli](https://github.com/ahmadawais/cli) taste preferences.
+This CLI was created by [CommandCode.ai](https://commandcode.ai) using [ahmadawais/cli](https://commandcode.ai/ahmadawais/cli) taste preferences.
 
 ## License
 

@@ -1,13 +1,13 @@
 {
   "name": "brnd",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "CLI to extract brand identity from any website",
   "type": "module",
   "license": "MIT",
   "author": "Ahmad Awais",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ahmadawais/brnd"
+    "url": "git+https://github.com/ahmadawais/brnd.git"
   },
   "keywords": [
     "branding",
@@ -18,7 +18,7 @@
     "fonts"
   ],
   "bin": {
-    "brnd": "./dist/index.js"
+    "brnd": "dist/index.js"
   },
   "files": [
     "dist"

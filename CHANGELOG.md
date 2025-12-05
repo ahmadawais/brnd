@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.5
+
+- Fix repository URL in package.json
+
 ## 0.0.4
 
 - Add ASCII banner to README
