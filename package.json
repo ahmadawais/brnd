@@ -1,11 +1,19 @@
 {
   "name": "brnd",
   "version": "0.0.1",
-  "description": "CLI to scrape branding info from websites",
+  "description": "CLI to extract brand identity from any website",
   "type": "module",
+  "license": "MIT",
+  "author": "Ahmad Awais",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadawais/brnd"
+  },
+  "keywords": ["branding", "cli", "firecrawl", "design-system", "colors", "fonts"],
   "bin": {
     "brnd": "./dist/index.js"
   },
+  "files": ["dist"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
