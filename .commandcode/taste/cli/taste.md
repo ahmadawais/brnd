@@ -15,3 +15,7 @@
 - Read CLI version from package.json instead of hardcoding it in the source code. Confidence: 0.75
 - Delete old source files when restructuring a project into a new folder structure. Confidence: 0.65
 - Use ora for loading spinners in CLI projects. Confidence: 0.65
+- Use shields.io badges with style=for-the-badge, colorA=191D20, colorB=268637 in README files. Confidence: 0.70
+- Mention "CLI created by commandcode.ai" in README attribution. Confidence: 0.65
+- Use conf package for storing API keys and config in global .config directory. Confidence: 0.65
+- Use clipboardy for clipboard operations in CLI projects. Confidence: 0.50

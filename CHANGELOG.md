@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.2
+
+- Interactive mode with @clack/prompts
+- `brnd login` command for saving API key
+- `-k, --key` flag for inline API key
+- `-c, --clipboard` flag to copy output to clipboard
+- Auto-prompt for missing URL or API key
+
 ## 0.0.1
 
 - Initial release

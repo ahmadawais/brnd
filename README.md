@@ -10,21 +10,58 @@ CLI to extract brand identity from any website using [Firecrawl](https://firecra
 npm install -g brnd
 ```
 
-## Setup
+## Usage
 
-Create a `.env` file with your Firecrawl API key:
+### Interactive Mode
+
+Just run `brnd` and follow the prompts:
 
 ```bash
-FIRECRAWL_API_KEY=fc-your-api-key
+brnd
 ```
 
-## Usage
+### Direct Mode
 
 ```bash
 brnd https://example.com
 ```
 
-This creates `brands/example.com.md` with the full branding profile including:
+### Login
+
+Save your Firecrawl API key for future use:
+
+```bash
+brnd login
+```
+
+### Options
+
+```bash
+brnd <url> -k, --key <key>    Use specific API key
+brnd <url> -c, --clipboard    Copy output to clipboard instead of file
+brnd -v, --version            Output version number
+brnd -h, --help               Display help
+```
+
+### Examples
+
+```bash
+# Extract branding and save to brands/example.com.md
+brnd https://example.com
+
+# Extract branding with inline API key
+brnd https://example.com -k fc-your-api-key
+
+# Extract branding and copy to clipboard
+brnd https://example.com -c
+
+# Save API key globally
+brnd login
+```
+
+## Output
+
+Creates `brands/sitename.tld.md` with the full branding profile including:
 
 - Color scheme & colors
 - Fonts & typography
@@ -33,12 +70,11 @@ This creates `brands/example.com.md` with the full branding profile including:
 - UI components
 - Brand personality
 
-## Options
+## API Key Priority
 
-```bash
-brnd -v, --version    Output version number
-brnd -h, --help       Display help
-```
+1. `-k, --key` flag
+2. `FIRECRAWL_API_KEY` environment variable
+3. Saved config (`~/.config/brnd/config.json`)
 
 ## CLI Created By
 
