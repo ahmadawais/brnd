@@ -1,0 +1,26 @@
+{
+  "name": "brnd",
+  "version": "0.0.1",
+  "description": "CLI to scrape branding info from websites",
+  "type": "module",
+  "bin": {
+    "brnd": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@mendable/firecrawl-js": "^4.8.2",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "ora": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
