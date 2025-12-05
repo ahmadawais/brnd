@@ -87,8 +87,12 @@ program
         placeholder: 'https://example.com',
         validate: (value) => {
           if (!value) return 'URL is required';
+          let url = value;
+          if (!url.startsWith('http://') && !url.startsWith('https://')) {
+            url = `https://${url}`;
+          }
           try {
-            new URL(value);
+            new URL(url);
           } catch {
             return 'Invalid URL';
           }
@@ -101,6 +105,10 @@ program
       }
 
       targetUrl = urlInput as string;
+    }
+
+    if (!targetUrl.startsWith('http://') && !targetUrl.startsWith('https://')) {
+      targetUrl = `https://${targetUrl}`;
     }
 
     let apiKey = getApiKey(options.key);

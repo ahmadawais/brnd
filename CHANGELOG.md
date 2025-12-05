@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.3
+
+- Auto-prefix `https://` for URLs without protocol
+- Support `brnd example.com` without requiring full URL
+
 ## 0.0.2
 
 - Interactive mode with @clack/prompts

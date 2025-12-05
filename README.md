@@ -47,13 +47,16 @@ brnd -h, --help               Display help
 
 ```bash
 # Extract branding and save to brands/example.com.md
+brnd example.com
+
+# Works with full URLs too
 brnd https://example.com
 
 # Extract branding with inline API key
-brnd https://example.com -k fc-your-api-key
+brnd example.com -k fc-your-api-key
 
 # Extract branding and copy to clipboard
-brnd https://example.com -c
+brnd example.com -c
 
 # Save API key globally
 brnd login

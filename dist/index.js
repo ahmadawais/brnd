@@ -65,8 +65,12 @@ program.argument("[url]", "URL to extract branding from").option("-k, --key <key
       placeholder: "https://example.com",
       validate: (value) => {
         if (!value) return "URL is required";
+        let url2 = value;
+        if (!url2.startsWith("http://") && !url2.startsWith("https://")) {
+          url2 = `https://${url2}`;
+        }
         try {
-          new URL(value);
+          new URL(url2);
         } catch {
           return "Invalid URL";
         }
@@ -77,6 +81,9 @@ program.argument("[url]", "URL to extract branding from").option("-k, --key <key
       process.exit(0);
     }
     targetUrl = urlInput;
+  }
+  if (!targetUrl.startsWith("http://") && !targetUrl.startsWith("https://")) {
+    targetUrl = `https://${targetUrl}`;
   }
   let apiKey = getApiKey(options.key);
   if (!apiKey) {
