@@ -19,3 +19,4 @@
 - Mention "CLI created by commandcode.ai" in README attribution. Confidence: 0.65
 - Use conf package for storing API keys and config in global .config directory. Confidence: 0.65
 - Use clipboardy for clipboard operations in CLI projects. Confidence: 0.50
+- When publishing CLI releases: update changelog, update readme, bump version, build, git commit with emoji prefix, tag, push with tags, and npm publish in one command chain. Confidence: 0.55

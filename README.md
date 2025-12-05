@@ -1,4 +1,10 @@
-# brnd
+```
+ _                     _ 
+| |__  _ __ _ __   __| |
+| '_ \| '__| '_ \ / _` |
+| |_) | |  | | | | (_| |
+|_.__/|_|  |_| |_|\__,_|
+```
 
 CLI to extract brand identity from any website using [Firecrawl](https://firecrawl.dev).
 
