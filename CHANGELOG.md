@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.4
+
+- Add ASCII banner to README
+
 ## 0.0.3
 
 - Auto-prefix `https://` for URLs without protocol

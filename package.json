@@ -1,6 +1,6 @@
 {
   "name": "brnd",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI to extract brand identity from any website",
   "type": "module",
   "license": "MIT",
